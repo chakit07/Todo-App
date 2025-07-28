@@ -1,0 +1,50 @@
+
+.todo-container {
+  padding: 200px;
+  border-radius: 20px;
+  margin: 20px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: -2px; left: -2px; right: -2px; bottom: -2px;
+  background: linear-gradient(45deg, #ff00ccab, #3333ffd5);
+  z-index: -1;
+  border-radius: inherit;
+  animation: pulseShadow 5s infinite;
+}
+@keyframes pulseShadow {
+  0% {
+    box-shadow: 0 0 10px #ff00cc;
+  }
+  50% {
+    box-shadow: 0 0 30px #3333ff;
+  }
+  100% {
+    box-shadow: 0 0 10px #ff00cc;
+  }
+}
+input {
+  width: 90%;
+  padding: 5px;
+  color: rgba(191, 194, 233, 0.891);
+}
+
+.items-container{
+  text-align: left;
+  margin: 10px;
+  /* padding: 200px; */
+}
+
+.new-btn{
+  min-width: 70px;
+  justify-content: center;
+}
+
+.new-row {
+  margin: 10px 7px;
+}

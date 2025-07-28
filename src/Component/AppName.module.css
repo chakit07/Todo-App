@@ -1,0 +1,22 @@
+h1{
+  /* color: rgb(21 94 144 / 58%);
+  font-weight: 700px;
+  font-size: 45px;
+  margin: 10px;
+  margin-bottom: 20px; */
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(50deg, rgb(248, 20, 248), #ff0, rgb(154, 35, 79), rgb(72, 24, 72));
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glitter 8s linear infinite;
+}
+@keyframes glitter {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
